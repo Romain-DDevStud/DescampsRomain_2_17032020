@@ -5,7 +5,8 @@
 }
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 img {
     max-width: 100%;
@@ -15,20 +16,73 @@ body {
     font-family: 'Raleway';
     font-size: 14px;
 }
-header, main {
-    max-width: 1340px;
-}
 ul {
     list-style-type: none;
 }
+h1, h2 {
+    font-size: 16px;
+}
+h3 {
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    color: black;
+}
+header h2 {
+    margin: 30px 0;
+}
+span {
+    font-weight: bold;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+}
 .border-radius {
-    border-radius: 10px;
+    border-radius: 15px;
+}
+.grid-nav {
+    display: grid;
+}
+.grid-1-11 {
+    grid-template-columns: 1fr 11fr;
+    grid-column-gap: 0px;
+    align-items: center;
+}
+ul.menu-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+ul.menu-nav li {
+    float: right;
+}
+ul.menu-nav li a.actif {
+    color: var(--main-color);
+    font-weight: bold;
+} 
+ul.menu-nav li a:hover:not(.actif) {
+    color: var(--main-color);
+    border-top: var(--main-color) 2px solid;
+    padding-top: 48px;
 }
 .hebergements {
     grid-area: hebergements;
     width: 880px;
     height: auto;
     background-color: var(--main-grey);
+}
+.hebergements h2 {
+    margin: 45px 40px 25px;
+}
+.hebergements>h3 {
+    margin: 45px 40px;
 }
 .populaires {
     grid-area: populaires;
@@ -47,6 +101,7 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
+    margin: 0 40px;
 }
 .hebergements .panel img {
     height: 100%;
@@ -71,4 +126,10 @@ ul {
     height: 134px;
     max-height: 100%;
     border-radius: 10px 0 0 10px;
+}
+.fa-star-blue {
+    color: var(--main-color);
+}
+.fa-star-grey {
+    color: #d9d9d9;
 }

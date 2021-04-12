@@ -12,26 +12,28 @@
 </head>
 <body>
     <!--Header de la page-->
-    <header>
+    <header class="wrapper grid-nav grid-1-11">
         <!--Navigation-->
-        <div>
             <!--Logo Navigation-->
+        <div>
             <h2>
                 <a href="#">
                     <img src="./images/logo/Reservia@3x.png" alt="Logo Reservia"/>
                 </a>
             </h2>
+        </div>
             <!--Menu Navigation-->
+        <div>
             <nav>
-                <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
+                <ul class="menu-nav">
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activités">Activités</a></li>
+                    <li><a href="#" class="actif">S'inscrire</a></li>
                 </ul>
-                <a href="#">S'inscrire</a>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="wrapper">
         <!--Rechercher-->
         <section>
             <div>
@@ -58,7 +60,7 @@
         <section class="grid-container">
             <!--Hébergements à Marseille-->
             <div class="hebergements border-radius">
-                <h2>Hébergements à Marseille</h2>
+                <h2 id="hebergements">Hébergements à Marseille</h2>
                 <!--Vignettes hébergements-->
                 <div class="grid-1-1-1">
                     <article class="panel border-radius">
@@ -71,7 +73,7 @@
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star fa-star-grey"></i>
                             </div>
                         </a>
                     </article>
@@ -85,7 +87,7 @@
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star fa-star-blue"></i>
                             </div>
                         </a>
                     </article>
@@ -99,7 +101,7 @@
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star fa-star-grey"></i>
                             </div>
                         </a>
                     </article>
@@ -112,8 +114,8 @@
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
-                                <i class="fas fa-star fa-star-blue"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star fa-star-grey"></i>
+                                <i class="fas fa-star fa-star-grey"></i>
                             </div>
                         </a>   
                     </article>
@@ -127,7 +129,7 @@
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star fa-star-grey"></i>
                             </div>
                         </a>    
                     </article>
@@ -141,7 +143,7 @@
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
                                 <i class="fas fa-star fa-star-blue"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star fa-star-blue"></i>
                             </div>
                         </a>
                     </article>
@@ -202,7 +204,7 @@
         </section>
         <!--Activités-->
         <section>
-            <h3>Activités à Marseille</h3>
+            <h2 id="activités">Activités à Marseille</h2>
             <!-- Vignettes d'activités-->
             <article>
                 <a href="#">
