@@ -13,7 +13,7 @@ img {
     object-fit: cover;
 }
 body {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
 }
 ul {
@@ -37,6 +37,10 @@ header h2 {
 }
 span {
     font-weight: bold;
+}
+footer {
+    background-color: var(--main-grey);
+    width: 100%;
 }
 .wrapper {
     width: 100%;
@@ -62,6 +66,10 @@ ul.menu-nav {
 }
 ul.menu-nav li {
     float: right;
+    margin-right: 40px;
+}
+ul.menu-nav li a{
+    padding: 0 10px;
 }
 ul.menu-nav li a.actif {
     color: var(--main-color);
@@ -70,7 +78,7 @@ ul.menu-nav li a.actif {
 ul.menu-nav li a:hover:not(.actif) {
     color: var(--main-color);
     border-top: var(--main-color) 2px solid;
-    padding-top: 48px;
+    padding: 48px 10px 0 10px;
 }
 .hebergements {
     grid-area: hebergements;
@@ -114,6 +122,7 @@ ul.menu-nav li a:hover:not(.actif) {
     width: 246px;
     height: fit-content;
     padding: 5px;
+    box-shadow: 3px 3px 10px #CCCCCC;
 }
 .populaires .panel2 {
     background-color: white;
@@ -132,4 +141,37 @@ ul.menu-nav li a:hover:not(.actif) {
 }
 .fa-star-grey {
     color: #d9d9d9;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-areas: 'col1 col2 col3 col4';
+    max-width: 1340px;
+}
+.col1 {
+    grid-area: col1;
+}
+.col2 {
+    grid-area: col2;
+}
+.col3 {
+    grid-area: col3;
+}
+.col4 {
+    grid-area: col4;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.footer div {
+    width: 30%;
+}
+.footer ul {
+    padding: 15px 0;
+}
+.footer li {
+    padding: 10px 0;
 }
