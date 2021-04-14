@@ -80,6 +80,9 @@ ul.menu-nav li a:hover:not(.actif) {
     border-top: var(--main-color) 2px solid;
     padding: 48px 10px 0 10px;
 }
+.fa-info {
+    color: var(--main-color);
+}
 .hebergements {
     grid-area: hebergements;
     width: 880px;
