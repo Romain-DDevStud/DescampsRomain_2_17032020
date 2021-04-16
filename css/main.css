@@ -80,8 +80,73 @@ ul.menu-nav li a:hover:not(.actif) {
     border-top: var(--main-color) 2px solid;
     padding: 48px 10px 0 10px;
 }
-.fa-info {
+.search {
+    margin-bottom: 40px;
+}
+.filter {
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.filter p {
+    font-weight: bold;
+}
+.filter div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 10px;
+}
+.filter .fas {
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: -20px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--main-colorlighter);
     color: var(--main-color);
+    border-radius: 25px;
+    background-color: var(--main-colorlighter);
+}
+.filter span {
+    padding: 12px 20px 10px 30px;
+    border-top: 2px solid var(--main-grey);
+    border-right: 2px solid var(--main-grey);
+    border-bottom: 2px solid var(--main-grey);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.filter div:hover .fas {
+    border-color: var(--main-color);
+}
+.filter span:hover {
+    border-color: var(--main-color);
+}
+.info {
+    display: flex;
+    margin-top: 30px;
+}
+.info p {
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--main-grey);
+    border-radius: 50%;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.info span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: lighter;
 }
 .hebergements {
     grid-area: hebergements;
