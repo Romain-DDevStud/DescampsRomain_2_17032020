@@ -50,6 +50,9 @@ footer {
 .border-radius {
     border-radius: 15px;
 }
+.margin-left {
+    margin-left: 10px;
+}
 .grid-nav {
     display: grid;
 }
@@ -58,11 +61,16 @@ footer {
     grid-column-gap: 0px;
     align-items: center;
 }
-ul.menu-nav {
+.menu {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
+}
+ul.menu-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 ul.menu-nav li {
     float: right;
@@ -71,9 +79,9 @@ ul.menu-nav li {
 ul.menu-nav li a{
     padding: 0 10px;
 }
-ul.menu-nav li a.actif {
+.actif {
     color: var(--main-color);
-    font-weight: bold;
+    font-weight: bolder;
 } 
 ul.menu-nav li a:hover:not(.actif) {
     color: var(--main-color);
@@ -123,6 +131,7 @@ ul.menu-nav li a:hover:not(.actif) {
     border-bottom-right-radius: 15px;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 .searchIcon {
     visibility: hidden;
@@ -168,11 +177,13 @@ ul.menu-nav li a:hover:not(.actif) {
 .filter div:hover .fas {
     border-color: var(--main-color);
     opacity: 80%;
+    cursor: pointer;
 }
 .filter span:hover {
     color: var(--main-color);
     border-color: var(--main-color);
     opacity: 80%;
+    cursor: pointer;
 }
 .info {
     display: flex;
@@ -242,6 +253,9 @@ ul.menu-nav li a:hover:not(.actif) {
     padding: 5px;
     box-shadow: 3px 3px 10px #CCCCCC;
 }
+.panel a>* {
+    padding-bottom: 5px;
+}
 .title {
     display: flex;
     flex-direction: row;
@@ -280,6 +294,9 @@ ul.menu-nav li a:hover:not(.actif) {
     justify-content: space-evenly;
     margin-left: 20px;
 }
+.details div>* {
+    padding-bottom: 5px;
+}
 .fa-star-blue {
     color: var(--main-color);
 }
@@ -294,6 +311,7 @@ ul.menu-nav li a:hover:not(.actif) {
     grid-template-areas: 'col1 col2 col3 col4';
     max-width: 1340px;
     column-gap: 40px;
+    margin-bottom: 50px;
 }
 .col1 {
     grid-area: col1;
@@ -311,6 +329,31 @@ ul.menu-nav li a:hover:not(.actif) {
 .col2 {
     grid-area: col2;
 }
+.card1 img {
+    height: 180px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.card2 img {
+    height: 110px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.col2 h3 {
+    margin: 20px;
+    padding-bottom: 20px;
+}
+.col2 div {
+    box-shadow: 3px 3px 10px #CCCCCC;
+}
+.frioul {
+    margin-top: 40px;
+}
+.longchamp {
+    margin-top: 40px;
+}
 .col3 {
     grid-area: col3;
     height: 446px;
@@ -326,6 +369,13 @@ ul.menu-nav li a:hover:not(.actif) {
 }
 .col4 {
     grid-area: col4;
+}
+.col4 h3 {
+    margin: 20px;
+    padding-bottom: 20px;
+}
+.col4 div {
+    box-shadow: 3px 3px 10px #CCCCCC;
 }
 .footer {
     display: flex;
