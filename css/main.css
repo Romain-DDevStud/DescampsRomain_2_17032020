@@ -393,3 +393,93 @@ ul.menu-nav li a:hover:not(.actif) {
 .footer li {
     padding: 10px 0;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .footer {
+        justify-content: space-between;
+        padding: 40px;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    .hebergements {
+        background-color: white;
+    }
+    .activités h2 {
+        margin-left: 20px;
+    }
+    .grid-container2 {
+        grid-template-columns: 1fr;
+        grid-template-areas: "col1"
+                             "col2"
+                             "col3"
+                             "col4";
+        row-gap: 20px;
+        margin: 20px;
+    }
+    .col1 {
+        height: 190px;
+    }
+    .col1 img {
+        height: 132px;
+        width: 100%;
+    }
+    .col1 h3 {
+        margin: 10px 10px 10px 0;
+        padding: 10px;
+    }
+    .col2 {
+        height: 380px;
+    }
+    .card1 img {
+        height: 132px;
+        width: 100%;
+    }
+    .card2 img {
+        height: 132px;
+        width: 100%;
+    }
+    .col2 h3 {
+        margin: 10px 10px 10px 0;
+        padding: 5px 10px 15px 10px;
+    }
+    .frioul {
+        margin-top: 20px;
+    }
+    .col3 {
+        height: 190px;
+    }
+    .col3 img {
+        height: 132px;
+        width: 100%;
+    }
+    .col3 h3 {
+        margin: 10px 10px 10px 0;
+        padding: 10px;
+    }
+    .col4 h3 {
+        margin: 10px 10px 10px 0;
+        padding: 5px 10px 15px 10px;
+    }
+    .longchamp {
+        margin-top: 20px;
+    }
+    .footer {
+        flex-direction: column;
+        padding: 35px 30px;
+    }
+    .footer div {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .footer div:last-of-type {
+        margin-bottom: 0;
+    }
+    .footer li {
+        padding: 10px 0;
+    }
+
+}
