@@ -405,8 +405,78 @@ ul.menu-nav li a:hover:not(.actif) {
     
 }
 @media screen and (max-width: 767px) {
+    .grid-1-11 {
+        grid-template-columns: 25% auto;
+    }
+    header h2 {
+        margin: 20px 0 20px 20px;
+    }
+    .search div:first-child {
+        margin-left: 20px;
+    }
+    button > span {
+        display: none;
+    }
+    .searchIcon {
+        visibility: visible;
+    }
+    .search button {
+        padding: 15px;
+        border-radius: 15px;
+    }
+    .search input[type="search"] {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .filter {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .filter p {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .filter div {
+        margin: 10px 10px 5px 20px;
+    }
+    .info {
+        margin: 20px 20px 0 20px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "populaires"
+                            "hebergements";
+    }
+    .grid-1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 0 20px; 
+    }
+    .populaires {
+        width: 375px;
+        border-radius: unset;
+        padding-bottom: 40px;
+    }
+    .title {
+        margin: 40px 20px 25px;
+    }
     .hebergements {
         background-color: white;
+        width: 375px;
+    }
+    .hebergements .panel {
+        width: 100%;
+    }
+    .hebergements .panel img {
+        width: 100%;
+    }
+    .hebergements > h3 {
+        margin: 35px 20px 0 20px;
+    }
+    .hebergements h2 {
+        margin: 40px 25px 25px;
     }
     .activités h2 {
         margin-left: 20px;
