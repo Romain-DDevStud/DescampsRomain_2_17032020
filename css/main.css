@@ -507,12 +507,12 @@ ul.menu-nav li a:hover:not(.actif) {
         grid-template-columns: 1fr;
     }
     header h2 {
-        margin: 20px 0 10px 20px;
+        margin: 20px 0 10px 10px;
     }
     .sign-in {
         position: absolute;
         top: 5.5vh;
-        right: 3vw;
+        right: 4.5vw;
     }
     .menu {
         justify-content: center;
