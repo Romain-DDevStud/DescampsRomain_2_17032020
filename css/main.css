@@ -521,6 +521,13 @@ ul.menu-nav li a:hover:not(.actif) {
         border-bottom: 3px solid var(--main-grey);
         width: 100%;
     }
+    ul.menu-nav li a:hover:not(.actif) {
+        color: var(--main-color);
+        border-top: unset;
+        border-bottom: 3px solid var(--main-color);
+        padding:0 65px 15px 65px;
+        margin-left: -40px;
+    }
     ul.menu-nav li:first-child a {
         color: var(--main-color);
         border-bottom: 3px solid var(--main-color);
