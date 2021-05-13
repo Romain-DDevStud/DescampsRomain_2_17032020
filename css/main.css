@@ -505,7 +505,7 @@ ul.menu-nav li a:hover:not(.actif) {
     }
 }
 /*Responsive Iphone 8*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
 
     .grid-1-11 {
         grid-template-columns: 1fr;
@@ -588,7 +588,7 @@ ul.menu-nav li a:hover:not(.actif) {
         margin: 0 20px; 
     }
     .populaires {
-        width: 375px;
+        width: 100%;
         border-radius: unset;
         padding-bottom: 40px;
         padding-right: 0;
@@ -606,7 +606,7 @@ ul.menu-nav li a:hover:not(.actif) {
     }
     .hebergements {
         background-color: white;
-        width: 375px;
+        width: 100%;
     }
     .hebergements .panel {
         width: 100%;
